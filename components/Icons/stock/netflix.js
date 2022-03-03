@@ -15,11 +15,11 @@ const SVG = (props) => (
         <defs>
             <radialGradient id="paint0_radial_2003_7" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(23.0495 23.3724) rotate(-19.0982) scale(0.688785 25.2301)">
                 <stop />
-                <stop offset="1" stop-opacity="0" />
+                <stop offset="1" stopOpacity="0" />
             </radialGradient>
             <radialGradient id="paint1_radial_2003_7" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(23.0495 23.3724) rotate(-19.0982) scale(0.688785 25.2301)">
                 <stop />
-                <stop offset="1" stop-opacity="0" />
+                <stop offset="1" stopOpacity="0" />
             </radialGradient>
         </defs>
     </svg>
