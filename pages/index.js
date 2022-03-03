@@ -17,7 +17,7 @@ const Index = () => {
     <>
       <Head>
         <title>Patricia Customer Dashboard</title>
-        <meta name="description" content="Patricia Customer Dashboard" />
+        <meta name="description" content="Patricia - Dashboard" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -113,7 +113,7 @@ const Index = () => {
 
               <div className='d-flex justify-content-end p-5 position-relative'>
                 <span className='cursor-pointer notification'><Icon name="notification" /></span>
-                <img src="./avatar.png" alt="Profile picture" className='avatar cursor-pointer make-absolute' height='38' width='39' />
+                <img src="./avatar.png" alt="Profile picture" className='me-2 ms-3 cursor-pointer make-absolute' height='38' width='39' />
                 <span className="mt-1 cursor-pointer make-absolute"><Icon name="ellipsis" /></span>
               </div>
 
