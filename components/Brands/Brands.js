@@ -22,18 +22,15 @@ const Brands = () => {
 
             <div className='mt-md-3 mt-4'>
                 {
-                    brands.map((brand) => {
+                    brands.map((brand, index) => {
                         const { icon, title, subtitle, amount } = brand;
                         return (
-                            <div className="row" style={{ lineHeight: '44px' }}>
+                            <div className="row" style={{ lineHeight: '44px' }} key={index}>
                                 <div className="col-xl-6">
                                     <span className='mt-5'><Icon name={icon} /></span>
 
-                                    {/* <div className='check col-md-12'> */}
                                     <span className='title ms-2'>{title}</span>
                                     <p className='subtitle'>{subtitle}</p>
-                                    {/* </div> */}
-
                                 </div>
 
                                 <div className="col-xl-6">

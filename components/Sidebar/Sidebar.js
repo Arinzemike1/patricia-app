@@ -23,10 +23,10 @@ const Sidebar = () => {
                     {
                         <ul className="main-menu ms-3">
                             {
-                                sideBarData.map((data) => {
+                                sideBarData.map((data, index) => {
                                     const { href, icon, title } = data;
                                     return (
-                                        <li className="main-menu__item">
+                                        <li className="main-menu__item" key={index}>
                                             <ActiveLink href={href} icon={icon} title={title}></ActiveLink>
                                         </li>
                                     )

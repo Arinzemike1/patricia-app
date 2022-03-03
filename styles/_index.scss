@@ -67,11 +67,11 @@
     }
     .make-absolute {
         position: absolute;
-        top: -1350%;
+        top: -1170%;
     }
     .notification {
         position: absolute;
-        top: -1350%;
+        top: -1170%;
         left: 62%;
     }
     .list-keys {
@@ -88,12 +88,12 @@
 @include tablet {
     .make-absolute {
         position: absolute;
-        top: -830%;
+        top: -990%;
         right: -120%;
     }
     .notification {
         position: absolute;
-        top: -830%;
+        top: -990%;
         left: 180%;
     }
 }
