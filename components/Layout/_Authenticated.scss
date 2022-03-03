@@ -9,3 +9,16 @@
 	  width: 100%;
 	}
 }
+.mobile {
+	@include phone {
+		display: block;
+		transition: 0.3s ease-out;
+	}
+	display: none;
+}
+.tabletAndAbove {
+	@include phone {
+		display: none;
+	}
+	display: block;
+}

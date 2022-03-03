@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Head from 'next/head';
 import Authenticated from '../components/Layout/Authenticated';
 import Header from '../components/Header/Header';
@@ -8,6 +8,11 @@ import DataCard from '../components/DataCard/DataCard';
 import Brands from '../components/Brands/Brands';
 
 const index = () => {
+  const [open, setOpen] = useState(false);
+
+    const handleOpen = (visibility) => {
+        setOpen(visibility);
+    }
   return (
     <>
       <Head>
@@ -18,11 +23,11 @@ const index = () => {
 
       <main>
         
-        <Authenticated>
+        <Authenticated open={open} handleOpen={handleOpen}>
           <div className="row" style={{ maxWidth: '100%' }}>
             <div className="col-xl-7 ps-4">
               
-            <Header title="Cards" />
+            <Header title="Cards" handleOpen={handleOpen} />
 
               <div className="row pt-5">
                 <div className="col-md-6 d-flex ps-5 pe-5">

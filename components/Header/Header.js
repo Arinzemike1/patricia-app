@@ -1,13 +1,13 @@
 import React from 'react';
 import Icon from '../Icons/icon';
 
-const Header = ({ title }) => {
+const Header = ({ title, handleOpen }) => {
     return (
         <>
-            <aside className="header__nav-drawer">
-                <label htmlFor="nav-drawer__trigger">
+            <aside>
+                <span className='hamburger ms-4' onClick={() => handleOpen(true)}>
                     <Icon name="hamburger" />
-                </label>
+                </span>
             </aside>
 
             <div className="header mt-2 pb-4 d-flex">

@@ -4,17 +4,17 @@ import { ActiveLink } from '../index';
 import { sideBarData } from '../../lib/Constants';
 import Icon from '../Icons/icon';
 
-const Sidebar = () => {
+const Sidebar = ({ handleOpen }) => {
     return (
         <div>
             <Fragment>
                 <aside className="sidebar">
-                    <aside className="sidebar__nav-trigger">
-                        <label htmlFor="nav-drawer__trigger">
+                    <aside>
+                        <span className='close-icon' onClick={() => handleOpen(false)}>
                             <Icon name="close" />
-                        </label>
+                        </span>
                     </aside>
-        
+
                     <div className="patricia-logo mt-5">
                         <Link href="/dashboard">
                             <a><Icon name="logo" /></a>
@@ -35,14 +35,13 @@ const Sidebar = () => {
 
                             <div className="bottom">
                                 <ul className="sub-menu d-flex">
-                                   <Icon name="help" />
+                                    <Icon name="help" />
                                     <li className="main-menu__item ms-3"> Help center</li>
                                 </ul>
                             </div>
                         </ul>
                     }
                 </aside>
-                <label htmlFor="nav-drawer__trigger" className="pseudo-sidebar" />
             </Fragment>
         </div>
     )

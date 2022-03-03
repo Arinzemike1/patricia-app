@@ -13,25 +13,9 @@
   
   @include phone{
     height: 100vh;
-    left: -100%;
+    left: 0;
     top: 0;
     z-index: 9;
-  }
-
-  // @include tablet {
-  //   height: 100vh;
-  //   left: -100%;
-  //   top: 0;
-  //   z-index: 9;
-  // }
-  
-  &__nav-trigger{
-    display: none;
-    
-	@include phone{
-      display: block;
-      padding: 0 to-rem(30px) 0 to-rem(20px);
-    }
   }
   
   h6{
@@ -50,6 +34,21 @@
   list-style: none;
   color: $sidebar-grey;
   margin-left: -25px;
+}
+
+.close-icon {
+  svg {
+    margin-left: 15px;
+    margin-top: 20px !important;
+
+    @include tablet {
+      display: none;
+    }
+
+    @include medium-screen {
+      display: none;
+    }
+  }
 }
 
 .main-menu{
@@ -95,36 +94,5 @@
 
   .bottom{
     margin-top: auto;
-  }
-}
-
-#nav-drawer__trigger{
-  display: none;
-  text-indent: 99999;
-  
-  @include phone{
-    &:checked + .sidebar {
-      left: -100%;
-      background-color: aqua !important;
-      transition: 0.3s ease-out;
-    }
-    &:checked ~ .pseudo-sidebar{
-      display: none;
-    }
-  }
-}
-
-.pseudo-sidebar{
-  display: none;
-  
-  @include phone{
-    display: block;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    position: fixed;
-    z-index: 9;
-    width: calc(100vw - 250px);
-    height: 100vh;
   }
 }

@@ -1,14 +1,19 @@
-import React, {useState} from 'react';
+import React from 'react';
 import Sidebar from '../Sidebar/Sidebar';
-import Header from '../Header/Header';
 
-const Authenticated = ({ children }) => {
+const Authenticated = ({ children, open, handleOpen }) => {
 
     return (
         <div>
             <section>
-                <input type="checkbox" defaultChecked={true} id="nav-drawer__trigger" />
-                <Sidebar />
+                <div className="tabletAndAbove">
+                    <Sidebar />
+                </div>
+                <div className="mobile">
+                    {
+                        open && <Sidebar handleOpen={handleOpen} />
+                    }
+                </div>
 
                 <main className="main-layout">
                     {children}

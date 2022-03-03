@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react';
+import React, { Fragment } from 'react';
 
 const Button = (
 	{
@@ -8,11 +8,11 @@ const Button = (
 		type,
 		...restProps
 	}
-) =>{
-	return(
+) => {
+	return (
 		<Fragment>
 			<button
-				className={`button${className &&(` ${className}`)}`}
+				className={`button${className && (` ${className}`)}`}
 				type={type}
 				{...restProps}
 			>
