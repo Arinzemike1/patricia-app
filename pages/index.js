@@ -7,7 +7,7 @@ import Button from '../components/Button/Button';
 import DataCard from '../components/DataCard/DataCard';
 import Brands from '../components/Brands/Brands';
 
-const index = () => {
+const Index = () => {
   const [open, setOpen] = useState(false);
 
     const handleOpen = (visibility) => {
@@ -130,4 +130,4 @@ const index = () => {
   )
 }
 
-export default index
+export default Index
