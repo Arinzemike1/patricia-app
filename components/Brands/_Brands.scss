@@ -1,0 +1,51 @@
+@import '../../styles/shared-styles';
+
+.title {
+    color: #575A65;
+    font-size: 14px;
+}
+
+.subtitle {
+    margin-left: 52px;
+    margin-top: -27px;
+    color: $grey-title;
+    font-size: 12px;
+}
+
+.amount {
+    color: $grey-title;
+    font-size: 14px;
+
+    @include phone {
+        margin-top: -70px;
+    }
+
+    @include tablet {
+        margin-top: -70px;
+    }
+
+    @include medium-screen {
+        margin-top: -70px;
+    }
+}
+
+@include phone {
+    .brands-container {
+        margin-top: -60px !important;
+        margin-left: 30px;
+    }
+}
+
+@include tablet {
+    .brands-container {
+        margin: -60px 35px 0 35px !important;
+        width: 600px;
+    }
+}
+
+@include medium-screen {
+    .brands-container {
+        margin: -60px 29px 0 29px !important;
+        width: 800px;
+    }
+}

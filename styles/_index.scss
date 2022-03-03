@@ -2,6 +2,13 @@
 
 .recent-activity {
     background-color: #F9FAFC;
+
+    @include tablet {
+        background-color: #fff;
+    }
+    @include medium-screen {
+        background-color: #fff;
+    }
 }
 
 .virtual-card {
@@ -58,8 +65,48 @@
     .other-card {
         margin-top: -2rem !important;
     }
-    // .make-absolute {
-    //     position: absolute;
-    //     top: 2%;
-    // }
+    .make-absolute {
+        position: absolute;
+        top: -1350%;
+    }
+    .notification {
+        position: absolute;
+        top: -1350%;
+        left: 62%;
+    }
+    .list-keys {
+        padding: 0 !important
+    }
+    .list-values {
+        padding: 0 !important
+    }
+    .card-details ul li {
+        padding-left: 13px;
+    }
+}
+
+@include tablet {
+    .make-absolute {
+        position: absolute;
+        top: -830%;
+        right: -120%;
+    }
+    .notification {
+        position: absolute;
+        top: -830%;
+        left: 180%;
+    }
+}
+
+@include medium-screen {
+    .make-absolute {
+        position: absolute;
+        top: -830%;
+        right: -120%;
+    }
+    .notification {
+        position: absolute;
+        top: -830%;
+        left: 190%;
+    }
 }

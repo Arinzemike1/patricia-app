@@ -3,6 +3,10 @@
 .data-card{
   background-color: #fff;
   border-radius: 24px;
+
+  @include phone {
+    width: 330px;
+  }
   
   &.grey-bg {
     background-color: #F9FAFC;

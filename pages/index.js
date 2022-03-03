@@ -5,6 +5,7 @@ import Header from '../components/Header/Header';
 import Icon from '../components/Icons/icon';
 import Button from '../components/Button/Button';
 import DataCard from '../components/DataCard/DataCard';
+import Brands from '../components/Brands/Brands';
 
 const index = () => {
   return (
@@ -106,28 +107,14 @@ const index = () => {
             <div className="col-md-5 recent-activity">
 
               <div className='d-flex justify-content-end p-5 position-relative'>
-                <span className='cursor-pointer make-absolute'><Icon name="notification" /></span>
+                <span className='cursor-pointer notification'><Icon name="notification" /></span>
                 <img src="./avatar.png" alt="Profile picture" className='me-2 ms-3 cursor-pointer make-absolute' height='38' width='39' />
                 <span className="mt-1 cursor-pointer make-absolute"><Icon name="ellipsis" /></span>
               </div>
 
               <div className="row">
-                <div className="col-md-12">
-                  <DataCard className='p-3 mt-3'>
-                    <div className="row">
-                      <div className="col-md-6">
-                        <h6 className='grey-text mt-2'>Recent Activity</h6>
-                      </div>
-
-                      <div className="col-md-6 d-flex">
-                        <div className='date d-flex p-2 me-2'>
-                          <Icon name="calender" />
-                          <h6 className='ms-3'>Start date 01/02/2021</h6>
-                        </div>
-                        <Icon name="download" />
-                      </div>
-                    </div>
-                  </DataCard>
+                <div className="col-xl-12">
+                 <Brands />
                 </div>
               </div>
             </div>
