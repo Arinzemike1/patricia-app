@@ -1,0 +1,24 @@
+@import '../../styles/shared-styles';
+
+.header {
+  border-bottom: 1px solid $border;
+  padding: to-rem(20px) to-rem(20px);
+
+  &__nav-drawer{
+    display: none;
+    margin-right: to-rem(20px);
+    
+    @include phone{
+      display: block;
+    }
+  }
+
+  h2 {
+    color: $grey-title;
+    font-size: 32px;
+  }
+
+  span {
+    margin-top: 5px;
+  }
+}

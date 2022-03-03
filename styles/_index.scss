@@ -1,0 +1,65 @@
+@import '../styles/shared-styles';
+
+.recent-activity {
+    background-color: #F9FAFC;
+}
+
+.virtual-card {
+    span {
+        color: #444854;
+        font-weight: 600;
+        font-size: 20px;
+        margin-top: -100px;
+    }
+    p {
+        font-size: 14px;
+        margin-top: -5px;
+    }
+}
+.cta-buttons {
+    margin-top: -15px
+}
+.card-details {
+    padding-top: 10px;
+    ul {
+        li {
+            list-style: none;
+            line-height: 50px;
+        }
+    }
+}
+.grey-text {
+    color: #9DA8B6;
+}
+.list-keys li {
+    color: #9DA8B6;
+}
+
+.list-values li {
+    color: #575A65;
+}
+.date {
+    background-color: #F9FAFC;
+    height: 33px;
+    border-radius: 8px;
+    color: #9DA8B6;
+    h6 {
+        font-size: 13px;
+    }
+}
+.balance {
+    color: #006156 !important;
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+
+@include phone {
+    .other-card {
+        margin-top: -2rem !important;
+    }
+    // .make-absolute {
+    //     position: absolute;
+    //     top: 2%;
+    // }
+}

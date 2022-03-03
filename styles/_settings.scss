@@ -1,0 +1,17 @@
+// Globals
+$global-font-size: 14px;
+$global-font-family: "proxima-nova", "Proxima Nova", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", sans-serif;
+
+// Body styles
+$body-font-size: $global-font-size;
+$body-font-color: #747474;
+$body-color-grey: #F7F8FC;
+
+// Font weights
+$font-weight-regular: 400;
+$font-weight-bold: 700;
+
+//  Break Points  //
+$mobile-width: 767px;
+$tablet-width: 979px;
+$medium-width: 1199px;

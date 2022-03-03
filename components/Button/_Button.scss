@@ -1,0 +1,37 @@
+@import '../../styles/shared-styles';
+
+.button{
+  background-color: $button-color;
+  border: none;
+  border-radius: 8px;
+  color: #000;
+  cursor: pointer;
+  display: inline-flex;
+  height: 40px;
+  outline: none;
+  padding: to-rem(10px) to-rem(20px);
+  transition: 0.3s;
+  align-items: center;
+
+  &--green {
+    background-color: transparent;
+    color: #006156;
+    border: 1px solid #006156;
+    padding: to-rem(10px) to-rem(15px);
+  }
+
+  &--delete {
+    background-color: transparent;
+    color: #CC4945;
+    border: 1px solid #CC4945;
+    padding: to-rem(10px) to-rem(15px);
+  }
+
+  &--fundCard {
+   display: none;
+
+   @include phone {
+      display: none !important;
+   }
+  }
+}

@@ -1,0 +1,13 @@
+@import '../../styles/shared-styles';
+
+.data-card{
+  background-color: #fff;
+  border-radius: 24px;
+  
+  &.grey-bg {
+    background-color: #F9FAFC;
+  }
+}
+.card-container {
+  margin-left: 40px;
+}

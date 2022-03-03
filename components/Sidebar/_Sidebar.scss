@@ -1,0 +1,130 @@
+@import '../../styles/shared-styles';
+
+.sidebar{
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 0rem);
+  position: fixed;
+  transition: 0.3s ease-in;
+  background-color: $white;
+  padding: 0 40px 0 26px;
+  border-right: 1px solid $border;
+  
+  
+  @include phone{
+    height: 100vh;
+    left: -100%;
+    top: 0;
+    z-index: 9;
+  }
+
+  // @include tablet {
+  //   height: 100vh;
+  //   left: -100%;
+  //   top: 0;
+  //   z-index: 9;
+  // }
+  
+  &__nav-trigger{
+    display: none;
+    
+	@include phone{
+      display: block;
+      padding: 0 to-rem(30px) 0 to-rem(20px);
+    }
+  }
+  
+  h6{
+    font-weight: $font-weight-bold;
+    margin: 0;
+    padding: to-rem(10px) to-rem(30px) to-rem(20px) to-rem(20px);
+    text-transform: uppercase;
+  }
+
+  .patricia-logo {
+    margin: 1.7rem 0 0 1.1rem;
+  }
+}
+.sub-menu {
+  font-size: 12px;
+  list-style: none;
+  color: $sidebar-grey;
+  margin-left: -25px;
+}
+
+.main-menu{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  font-size: 14px;
+  list-style: none;
+  margin-top: 90px;
+  padding: 0;
+
+  &__item{
+    margin: 0 0 to-rem(10px);
+
+    a,
+    .main-menu__item{
+      font-family: 'Rubik', sans-serif;
+      background: transparent;
+      border-left: 3px solid transparent;
+      display: flex !important;
+      line-height: to-rem(15px);
+      text-decoration: none;
+      font-size: 13px;
+      margin-top: 3px;
+      color: $sidebar-grey;
+      transition: 0.3s;
+      width: 100%;
+
+      &.active{
+        background-color: #FFEEA7;
+        border-radius: 8px;
+        font-weight: bold;
+        line-height: to-rem(25px);
+        margin-bottom: 6px;
+      }
+    }
+  }
+
+  &__icon{
+    height: to-rem(24px);
+    margin-right: to-rem(11px);
+  }
+
+  .bottom{
+    margin-top: auto;
+  }
+}
+
+#nav-drawer__trigger{
+  display: none;
+  text-indent: 99999;
+  
+  @include phone{
+    &:checked + .sidebar {
+      left: -100%;
+      background-color: aqua !important;
+      transition: 0.3s ease-out;
+    }
+    &:checked ~ .pseudo-sidebar{
+      display: none;
+    }
+  }
+}
+
+.pseudo-sidebar{
+  display: none;
+  
+  @include phone{
+    display: block;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 9;
+    width: calc(100vw - 250px);
+    height: 100vh;
+  }
+}
