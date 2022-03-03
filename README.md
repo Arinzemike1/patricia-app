@@ -17,6 +17,7 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 - `components/`: Contains the application's components
     - `Icons/stock/`: Contains app icons
 - `public/`: Contains publicly accessible files
+- `lib/`: Contains app utilities and functions
 - `pages`: Contains all app routes/pages
     - `_app.js`: Contains imported SCSS files for global visibility
 - `styles`: Contains major stylesheets of the application

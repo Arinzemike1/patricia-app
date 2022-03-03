@@ -2,6 +2,7 @@ import React from 'react';
 import DataCard from '../DataCard/DataCard';
 import Icon from '../Icons/icon';
 import { brands } from '../../lib/Constants';
+import { numberWithCommas } from '../../lib/Utils';
 
 const Brands = () => {
     return (
@@ -34,7 +35,7 @@ const Brands = () => {
                                 </div>
 
                                 <div className="col-xl-6">
-                                    <span className='amount d-flex justify-content-end'>{`$${amount}`}</span>
+                                    <span className='amount d-flex justify-content-end'>{`$${numberWithCommas(amount)}`}</span>
                                 </div>
                             </div>
                         )

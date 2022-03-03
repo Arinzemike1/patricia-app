@@ -5,7 +5,7 @@ const Header = ({ title, handleOpen }) => {
     return (
         <>
             <aside>
-                <span className='hamburger ms-4' onClick={() => handleOpen(true)}>
+                <span className='hamburger ms-4 d-md-none d-block' onClick={() => handleOpen(true)}>
                     <Icon name="hamburger" />
                 </span>
             </aside>

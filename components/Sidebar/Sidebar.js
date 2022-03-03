@@ -10,7 +10,7 @@ const Sidebar = ({ handleOpen }) => {
             <Fragment>
                 <aside className="sidebar">
                     <aside>
-                        <span className='close-icon' onClick={() => handleOpen(false)}>
+                        <span className='close-icon d-md-none d-block' onClick={() => handleOpen(false)}>
                             <Icon name="close" />
                         </span>
                     </aside>

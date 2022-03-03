@@ -10,9 +10,9 @@ import Brands from '../components/Brands/Brands';
 const Index = () => {
   const [open, setOpen] = useState(false);
 
-    const handleOpen = (visibility) => {
-        setOpen(visibility);
-    }
+  const handleOpen = (visibility) => {
+    setOpen(visibility);
+  }
   return (
     <>
       <Head>
@@ -22,12 +22,12 @@ const Index = () => {
       </Head>
 
       <main>
-        
+
         <Authenticated open={open} handleOpen={handleOpen}>
           <div className="row" style={{ maxWidth: '100%' }}>
             <div className="col-xl-7 ps-4">
-              
-            <Header title="Cards" handleOpen={handleOpen} />
+
+              <Header title="Cards" handleOpen={handleOpen} />
 
               <div className="row pt-5">
                 <div className="col-md-6 d-flex ps-5 pe-5">
@@ -113,13 +113,13 @@ const Index = () => {
 
               <div className='d-flex justify-content-end p-5 position-relative'>
                 <span className='cursor-pointer notification'><Icon name="notification" /></span>
-                <img src="./avatar.png" alt="Profile picture" className='me-2 ms-3 cursor-pointer make-absolute' height='38' width='39' />
+                <img src="./avatar.png" alt="Profile picture" className='avatar cursor-pointer make-absolute' height='38' width='39' />
                 <span className="mt-1 cursor-pointer make-absolute"><Icon name="ellipsis" /></span>
               </div>
 
               <div className="row">
                 <div className="col-xl-12">
-                 <Brands />
+                  <Brands />
                 </div>
               </div>
             </div>
